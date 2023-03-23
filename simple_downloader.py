@@ -124,5 +124,4 @@ def get_images(categories: list, num: int, test_size: float = 0.2, valid_size: f
 
     print("DOWNLOADING COMPLETED")
 
-
-get_images(["cat", "dog", "hamster", "gold fish"], 100)
+# get_images(["cat", "dog", "hamster", "gold fish"], 100)

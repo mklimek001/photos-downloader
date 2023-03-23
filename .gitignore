@@ -2,3 +2,4 @@ venv/
 chromedriver/
 .idea/
 downloaded_photos/
+__pycache__/
