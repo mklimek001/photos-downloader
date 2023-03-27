@@ -14,6 +14,11 @@ DRIVER_PATH = "./chromedriver/chromedriver.exe"
 
 
 def scroll_down(wd, delay=2):
+    moore_button = wd.find_elements(By.CLASS_NAME, "mye4qd")
+    if len(moore_button) > 0:
+        if moore_button[0].is_displayed():
+            moore_button[0].click()
+
     wd.execute_script("window.scrollTo(0, document.body.scrollHeight);")
     time.sleep(delay)
 
@@ -124,4 +129,3 @@ def get_images(categories: list, num: int, test_size: float = 0.2, valid_size: f
 
     print("DOWNLOADING COMPLETED")
 
-# get_images(["cat", "dog", "hamster", "gold fish"], 100)
